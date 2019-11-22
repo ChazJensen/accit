@@ -1,0 +1,46 @@
+/*
+ * color scheme
+ * 		bg1:	344055
+ * 		bg2:	E8E8E4
+ * 		fg:		ACC0D4
+ * 		hl1:	007EA7
+ * 		hl2:	75BCC4
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background-color: #344055;
+	color: #ACC0D4;
+}
+
+body {
+	background-color: #E8E8E4;
+	color: #000;
+}
+
+li {
+	list-style: none;
+}
+
+
+
+.block {
+	padding-bottom: 30px;
+}
+
+.sub-block {
+	padding-bottom: 15px;
+}

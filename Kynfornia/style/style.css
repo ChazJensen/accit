@@ -1,0 +1,282 @@
+/*
+Color Pallate:
+	Chinese Red:		#a33b20
+	Pale Gold:			#edc892
+	Dim Grey:				#706c61
+	Quartz:					#4e4a59
+	Dark Puce:			#493843
+
+
+*/
+
+* {margin: 0; border: 0; padding: 0;}
+
+@font-face {
+  font-family: "EmbossedBlack-Normal";
+  src: url("fonts/black-normal/embossed-black-normal.eot"); /* IE9 Compat Modes */
+  src: url("fonts/black-normal/embossed-black-normal.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("fonts/black-normal/embossed-black-normal.otf") format("opentype"), /* Open Type Font */
+    url("fonts/black-normal/embossed-black-normal.svg") format("svg"), /* Legacy iOS */
+    url("fonts/black-normal/embossed-black-normal.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("fonts/black-normal/embossed-black-normal.woff") format("woff"), /* Modern Browsers */
+    url("fonts/black-normal/embossed-black-normal.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+}
+
+.bg-dark-purple {background-color: #493843 !important;}
+.bg-red {background-color: #a33b20 !important;}
+.bg-gold {background-color: #edc892 !important;}
+.bg-clear-grey {background-color: rgba(78,74,89,0.5) !important;}
+.bg-clearer-grey {background-color: rgba(78,74,89,0.15) !important;}
+.dark-purple {color: #493843 !important;}
+.red {color: #a33b20 !important;}
+.gold {color: #edc892 !important;}
+.grey {color: #4e4a59 !important;}
+.black {color: #333 !important;}
+.faded-white {color: rgba(255, 255, 255, 0.5) !important;}
+
+
+
+/* By Element--------------------------------------------- */
+html, body {
+	width: 100%;
+	min-height: 100vh !important;
+	font-family: sans-serif;
+}
+
+main {
+	min-height: 100%;
+}
+
+
+/* By Class----------------------------------------------- */
+
+.jumbotron {
+	padding: 2em;
+	padding-bottom: 1em;
+	margin-bottom: 0;
+}
+
+.navbar {
+	padding-bottom: 0;
+	display: block;
+}
+
+.nav-item {
+	min-width: 150px;
+	
+	text-align: center;
+	
+	border-radius: 3px;
+	
+	/* 25 px between bottom of header and top of main */
+	margin: 0 2%; 
+	padding: 2px;
+}
+
+.page-footer {
+	padding: 5px;
+}
+
+.container {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	max-width: 90%;
+}
+
+.media {
+	max-height: 150px;
+	
+	margin-bottom: 10px;
+	
+}
+
+
+/* My CSS Classes */
+
+.pfp {
+	height:64px;
+	width: 64px;
+}
+
+.embeded-information {
+	height: 450px;
+	
+	flex-direction: column;
+	
+	border-radius: 5px;
+}
+
+.box-heading {
+	height: 30px;
+}
+
+.show-more-bar {
+	background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(73, 56, 67, 1) 95%);
+
+	height: 45px;
+	width: 100%;
+	
+	z-index: 3;
+	
+	padding-top: 10px;
+	
+	margin-left: 50px;
+	margin-right: 1px;
+	margin-top: -45px;
+}
+
+.board-button {
+	background-color: rgba(73, 56, 67, .8);
+	color: rgba(255, 255, 255, 0.75) !important;
+	
+	position: relative;
+	
+	left: 50%;
+	
+	transform: translateX(-50%);
+}
+
+.signin-btn-container {
+	margin: 0.75em;
+}
+
+.block-header {
+	text-decoration-line: underline !important;
+	text-decoration-style: dashed !important;
+}
+
+.nothing-happening {
+	font-family: "Arial Black", sans-serif;
+	font-size: 100%; /* for ie and any other nasty bugs */
+	font-size: 2vw;
+}
+
+.layout-spacer {
+	margin-left: 50px;
+}
+
+
+
+.board {
+	height: 200px;
+	position: relative;
+	overflow-y: hidden;
+	margin-top: 5px;
+}
+
+
+
+/* By ID-------------------------------------------------- */
+
+
+#logo {
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	
+	float: left;
+}
+
+#title {
+	font-family: EmbossedBlack-Normal;
+	color: #493843;
+}
+
+
+
+
+
+
+/* Queries-------------------------------------------------- */
+
+/* should include whatever rules that are contained in here in the xl threshold and only applies the rules if the screen size is past the xl threshold--doesn't */
+@include media-breakpoint-up(xl) {
+	
+}
+
+@media screen and (max-width: 576px) {
+	.block-header {
+		font-size: 5vw;
+	}
+}
+
+/* accounts for smaller screen sizes--makes the picture look better */
+@media screen and (max-width: 991px) {
+	.fitted-img {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	
+	.nothing-happening {
+		font-size: 100%;
+	}
+	
+}
+
+
+/* media query for screen size of large threshold that only applies styles once the lg threshold is met for screen size */
+@media screen and (min-width: 992px) {
+	
+	.signin-btn {
+		font-size: 1.5em;
+		
+		padding: 1em !important;
+	}
+	
+	.signin-btn-container {
+		margin: 1em;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.img-rel {
+		background-color: rgba(0,0,0,0) !important;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.nav-active {
+		margin-bottom: -25px;
+	}
+
+	.nav-active::after {
+		content: "";
+		height: 25px;
+		background-color: #edc892;
+	}
+	
+	.fitted-img {
+		width: 100%;
+	
+		position: relative;
+		top: 50%;
+		
+		transform: translateY(-50%);
+	}
+	
+	.img-rel {
+		height: 100px;
+		
+		color: #a33b20;
+		text-shadow: 1px 1px #000000;
+		
+		display: inline-flex;
+		
+		position: relative;
+		top: 70%;
+		left: 0%;
+		
+		z-index: 10;
+	}
+}
+
+
+
+
+
+
+
+
+

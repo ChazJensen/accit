@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="bg-dark-purple">
+<head>
+	<meta charset="UTF-8" />
+	<title>Kynfornia</title>
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style/style.css" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Chris Johnson">
+	<meta name="description" content="Kynfornia is a world in the game Dungeons and Dragons.">
+	<meta name="robots" content="all">
+</head>
+
+
+
+<body class="bg-dark-purple">
+	<!--https://www.w3.org/Style/Examples/007/center.en.html for centering tutorial -->
+	
+	<header class="bg-dark-purple row w-100 text-center text-xl-left jumbotron jumbotron-fluid">
+		
+			<div class="bg-dark-purple red col-xl-3 float-left">
+				<a href="index.html" class="d-inline-flex text-decoration-none">
+					<div id="logo">
+						<img class="w-100" src="images/logo.png" alt="picture of Kynfornia's logo" />
+					</div>
+			
+					<h1 id="title" class="red">Kynfornia</h1>
+				</a>
+			</div>
+			
+			<!-- navbar-expand-xl -->
+			<nav class="bg-dark-purple col-xl-9 navbar navbar-expand-lg">
+				<ul class="bg-dark-purple navbar-nav">
+					<li class="bg-gold nav-item mx-lg-auto nav-active">
+						<a class="red nav-link" href="#">Home</a>
+					</li>
+					<li class="bg-gold nav-item">
+						<a class="red nav-link" href="myCampaigns/home.html">My Campaigns</a>
+					</li>
+					<li class="bg-gold nav-item mx-lg-auto">
+						<a class="red nav-link" href="forums/home.html">Forum</a>
+					</li>
+					<li class="bg-gold nav-item mx-lg-auto">
+						<a class="red nav-link" href="lore/home.html">Lore</a>
+					</li>
+					<li class="bg-gold nav-item mx-lg-auto">
+						<a class="red nav-link" href="settings.html" alt="Becomes 'My Account' when signed in">Log In / Sign Up</a>
+					</li>
+				</ul>
+			</nav>
+		
+	</header>
+	
+	<main class="bg-gold container">
+		<div id="helloWorld"></div>
+		<div class="row w-100 mb-2 mx-auto no-gutters">
+			<div class="col bg-red w-75 overflow-hidden" style="height: 450px;">
+				<div class="row col-xl-10 offset-xl-1 bg-clear-grey py-md-5 p-xl-0 no-gutters img-rel" style="z-index:10;">
+					<div class="col-xl-9">
+						<h1>Online Role-Playing Excellence</h1>
+						<p class="position-relative" style="left: 20px;">For people who want more story to their Tabletop RPGs</p>
+					</div>
+					<div class="col-xl-3 text-left">
+						<div class="position-relative" style="top:50%; transform: translateY(-50%);">
+							<a href="loginsignup.html" class="bg-gold red p-3 d-inline-block my-auto" style="border-radius: 15px;">
+								Sign Up / Log In
+							</a>
+						</div>
+					</div>
+				</div>
+				<img class="fitted-img" src="images/map.jpg" alt="the map I wish I had" style="z-index:0;" />
+			</div>
+		</div>
+		
+
+		<div class="row w-100">
+			<div class="col-md-12 py-4">
+				
+				<div role="container">
+				
+					<div class="box-heading my-3">	
+						<h3 class="px-2">
+							<a href="#" class="black block-header">The Lore Board ▷</a>
+						</h3>
+					</div>
+					
+					<div class="row feed-div">
+						<div class="layout-spacer"></div>
+						<div class="col bg-red p-2 w-100 h-100 embeded-information">
+							<div id="lore-board" class="col px-2 board">
+								<p class="faded-white my-auto align-middle text-center nothing-happening filler-text">Oops! There's nothing to show at the moment.</p>
+							</div>
+						</div>
+						
+						
+						
+						<div class="row rounded show-more-bar">
+							<button id="lb-btn" class="black my-0 w-10 px-1 text-center board-button"><span class="h4">Show More</span></button>
+						</div>
+						
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="row w-100">
+			<div class="col-lg-3 py-4">
+				<div role="container">
+					<div class="box-heading my-3">	
+						<h3 class="px-2">
+							<a href="#" class="black block-header">My Campaigns ▷</a>
+						</h3>
+					</div>
+					<div class="row feed-div">
+						<div class="layout-spacer"></div>
+						<div class="col bg-red content w-100 h-100embeded-information">
+							<div id="my-campaigns-feed" class="p-2 h-100 board">
+								<p class="faded-white my-auto align-middle text-center nothing-happening filler-text">Oops! There's nothing to show at the moment.</p>
+							</div>
+						</div>
+						<div class="row rounded show-more-bar">
+							<button id="my-campaigns-btn" class="black my-0 w-10 px-1 text-center board-button"><span class="h4">Show More</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-9 py-4">
+				<div role="container">
+					<div class="box-heading my-3">	
+						<h3 class="px-2">
+							<a href="#" class="black block-header">Forums ▷</a>
+						</h3>
+					</div>
+					<div class="row feed-div">
+						<div class="layout-spacer"></div>
+						<div class="col bg-red content w-100 h-100 embeded-information">
+							
+							<div id="forums-feed" class="p-2 board">
+								<p class="faded-white my-auto align-middle text-center nothing-happening filler-text">Oops! There's nothing to show at the moment.</p>
+							</div>
+						</div>
+						<div class="row rounded show-more-bar">
+							<button id="feed-btn" class="black my-0 w-10 px-1 text-center board-button"><span class="h4">Show More</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="row w-100">
+			<div class="col-lg-7 py-4">
+				<div role="container">
+					<div class="box-heading my-3">	
+						<h3 class="px-2">
+							<a href="#" class="black block-header">Character Workshop ▷</a>
+						</h3>
+					</div>
+					<div class="row feed-div">
+						<div class="layout-spacer"></div>
+						<div class="col bg-red content w-100 h-75 embeded-information">
+							<div id="character-ws-feed" class="p-2 h-100 board">
+								<p class="faded-white my-auto align-middle text-center nothing-happening filler-text">Oops! There's nothing to show at the moment.</p>
+							</div>
+						</div>
+						<div class="row rounded show-more-bar">
+							<button id="character-ws-btn" class="black my-0 w-10 px-1 text-center board-button"><span class="h4">Show More</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5 py-4">
+				<div role="container">
+					<div class="box-heading my-3">	
+						<h3 class="px-2">
+							<a href="#" class="black block-header">News In Kynfornia ▷</a>
+						</h3>
+					</div>
+					<div class="row feed-div">
+						<div class="layout-spacer"></div>
+						<div class="col bg-red content w-100 h-75 embeded-information">
+							<div id="news-feed" class="px-2 h-100 board">
+								<p class="faded-white my-auto align-middle text-center nothing-happening filler-text">Oops! There's nothing to show at the moment.</p>
+							</div>
+						</div>
+						<div class="row rounded show-more-bar">
+							<button id="news-btn" class="black my-0 w-10 px-1 text-center board-button"><span class="h4">Show More</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="misc" class="board" style="display:none"></div>
+	</main>
+	
+	<footer class="bg-red page-footer"><p>asdf</p></footer>
+	<script type="application/javascript" src="script/User.js"></script>
+	<script type="application/javascript" src="script/Article.js"></script>
+	<script type="application/javascript" src="script/Button.js"></script>
+	<script type="application/javascript" src="script/script.js"></script>
+	<script type="application/javascript" src="script/main.js"></script>
+</body>
+</html>
